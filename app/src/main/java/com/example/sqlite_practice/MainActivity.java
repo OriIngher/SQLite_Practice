@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
             Intent si = new Intent(this,sort.class);
             startActivity(si);
         }
-        if (st.equals("creditss")){
+        if (st.equals("credits")){
             Intent si = new Intent(this,credits.class);
             startActivity(si);
         }
