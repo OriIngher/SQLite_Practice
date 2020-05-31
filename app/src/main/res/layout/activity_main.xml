@@ -239,7 +239,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="25"
             android:ems="10"
-            android:hint="Reva"
+            android:hint="Quarter"
             android:inputType="phone" />
 
         <Space

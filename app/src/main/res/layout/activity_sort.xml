@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:gravity="center"
-    tools:context=".SortActivity">
+    tools:context=".sort">
 
     <Space
         android:layout_width="0dp"

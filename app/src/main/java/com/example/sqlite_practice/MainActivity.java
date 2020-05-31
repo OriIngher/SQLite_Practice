@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     HelperDB hlp;
     EditText etNAME, etADD, etNUM, etHNUM, etMNAME, etMNUM, etDNAME, etDNUM;
     EditText etNAME2, etQUAR, etGRADE;
+    Intent si;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,24 +108,22 @@ public class MainActivity extends AppCompatActivity {
         db.close();
 
     }
-
+    @Override
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.main,menu);
         return true;
     }
-
+    @Override
     public boolean onOptionsItemSelected (MenuItem item){
         String st = item.getTitle().toString();
         if (st.equals("info")){
-            Intent si = new Intent(this, info.class);
+             si = new Intent(this, info.class);
             startActivity(si);
-        }
-        if(st.equals("sort")){
-            Intent si = new Intent(this,sort.class);
+        } else if(st.equals("sort")){
+             si = new Intent(this,sort.class);
             startActivity(si);
-        }
-        if (st.equals("credits")){
-            Intent si = new Intent(this,credits.class);
+        } else if (st.equals("credits")){
+             si = new Intent(this,credits.class);
             startActivity(si);
         }
         return true;
